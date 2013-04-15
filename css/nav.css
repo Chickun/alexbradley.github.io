@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony)
+
+*
+  box-sizing: border-box
+
+html, body
+  padding: 0
+  margin: 0
+
+nav
+  position: relative
+  text-align: center
+  background: #202033
+  box-shadow: 0 3px 5px #555
+  
+  &:hover a
+    color: transparent
+    text-shadow: 0 0 3px #CC5C00
+    
+  
+  a
+    display: inline-block
+    width: 150px
+    height: 66px
+    line-height: 66px
+    font:
+      family: Sintony
+      size: 1.25em
+    text-decoration: none
+    color: #CC5C00
+    transition: all 0.3s ease
+      
+    &:hover
+      color: #FF7300
+      border-bottom: 5px solid #FF7300
+      text-shadow: none
+
+// Just because I don't like when it splits up to 3-1
+@media screen and (max-width: 620px)
+  nav a
+    width: 49%
+    
+@media screen and (max-width: 300px)
+  nav a
+    width: 100%
